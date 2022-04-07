@@ -201,10 +201,14 @@ airflow_conf_set() {
 #   None
 #########################
 airflow_configure_base_url() {
-    if [[ -z "$AIRFLOW_BASE_URL" ]]; then
-        airflow_conf_set "webserver" "base_url" "http://${AIRFLOW_WEBSERVER_HOST}:${AIRFLOW_WEBSERVER_PORT_NUMBER}"
+    if [[ -z "$AIRFLOW_FQDN_URL" ]]; then
+        if [[ -z "$AIRFLOW_BASE_URL" ]]; then
+            airflow_conf_set "webserver" "base_url" "http://${AIRFLOW_WEBSERVER_HOST}:${AIRFLOW_WEBSERVER_PORT_NUMBER}"
+        else
+            airflow_conf_set "webserver" "base_url" "$AIRFLOW_BASE_URL"
+        fi
     else
-        airflow_conf_set "webserver" "base_url" "$AIRFLOW_BASE_URL"
+        airflow_conf_set "webserver" "base_url" "$AIRFLOW_FQDN_URL"
     fi
 }
 
