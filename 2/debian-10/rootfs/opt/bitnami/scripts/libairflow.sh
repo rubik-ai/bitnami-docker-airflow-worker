@@ -129,7 +129,6 @@ airflow_initialize() {
     fi
 }
 
-
 ########################
 # Generate Airflow conf file
 # Globals:
@@ -309,7 +308,7 @@ airflow_configure_database() {
     is_boolean_yes "$AIRFLOW_DATABASE_USE_SSL" && extra_options="?sslmode=require"
 
     info "Configuring Airflow database"
-    airflow_conf_set "core" "sql_alchemy_conn" "postgresql+psycopg2://${user}:${password}@${AIRFLOW_DATABASE_HOST}:${AIRFLOW_DATABASE_PORT_NUMBER}/${AIRFLOW_DATABASE_NAME}${extra_options:-}"
+    airflow_conf_set "database" "sql_alchemy_conn" "postgresql+psycopg2://${user}:${password}@${AIRFLOW_DATABASE_HOST}:${AIRFLOW_DATABASE_PORT_NUMBER}/${AIRFLOW_DATABASE_NAME}${extra_options:-}"
 }
 
 ########################

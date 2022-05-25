@@ -1,17 +1,17 @@
 {
     "airflow-worker": {
         "arch": "amd64",
-        "digest": "34aeef87de5b3bfcd42e516e995d0e580075b2c3550dc6a3a9a398ab7291ff7c",
+        "digest": "ef2b0bf0096b4d3b2c5700c95bd10f8733525f496beab1d138d5437fc7f4dc26",
         "distro": "debian-10",
         "type": "NAMI",
-        "version": "2.2.5-0"
+        "version": "2.3.0-2"
     },
     "git": {
         "arch": "amd64",
-        "digest": "75c0294b7af868721549926139e6ddbec9548fbd0e69c7e199d640a4531d858b",
+        "digest": "e00f740b66faf2808cb8983a39b186d43a8367730512c402df78751a9cefbfc1",
         "distro": "debian-10",
         "type": "NAMI",
-        "version": "2.35.1-6"
+        "version": "2.36.1-0"
     },
     "gosu": {
         "arch": "amd64",
@@ -22,30 +22,30 @@
     },
     "ini-file": {
         "arch": "amd64",
-        "digest": "7a4f45cbebd2e242278060415dd1a3f0dbe68991fdcaea5bb311e8de54a3e027",
+        "digest": "2c9ca79a0586a4ec64c66aceda27ebab1ea877dc63982203b5eb71150e00a5e9",
         "distro": "debian-10",
         "type": "NAMI",
-        "version": "1.4.1-7"
+        "version": "1.4.3-0"
     },
     "postgresql-client": {
         "arch": "amd64",
-        "digest": "351886297b1300f9430bed82c58a9ec4c35101de73ee9bf8bb33b3c7fff76801",
+        "digest": "d5820263d74b7847f65a05b513f1e1ab196128cd9e3dff1b90a2063276667982",
         "distro": "debian-10",
         "type": "NAMI",
-        "version": "10.20.0-4"
+        "version": "10.21.0-0"
     },
     "python": {
         "arch": "amd64",
-        "digest": "704fe6b545280ae027303b4ec875b495ee6da2256b3d8f877467077b0f031a60",
+        "digest": "a328c8fb3db9e60d3aa19eb7ca31de5da372affcb3d7c0d73610b4a19b634f94",
         "distro": "debian-10",
         "type": "NAMI",
-        "version": "3.8.13-2"
+        "version": "3.8.13-3"
     },
     "wait-for-port": {
         "arch": "amd64",
-        "digest": "35c818ba3f4b5aae905959bc7d3a5e81fc63786e3c662b604612c0aa7fcda8fd",
+        "digest": "0603c8eaf6d24e76563431e36e512da06bfebb3a06ede31b3e84d9879213c162",
         "distro": "debian-10",
         "type": "NAMI",
-        "version": "1.0.1-10"
+        "version": "1.0.3-0"
     }
 }
